@@ -3,7 +3,9 @@
         "index": {
             "body": [
                 "header/h-1",
-                "carousel/c-3"
+                "slider/s-1",
+                "carousel/c-3",
+                "footer/f-1"
             ]
         }
     }

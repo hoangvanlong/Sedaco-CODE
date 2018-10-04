@@ -1,0 +1,91 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-footer-11
+	+pad(4rem null)
+	position: relative
+	z-index: 1
+	color: color-get($mau, trang)
+	overflow: hidden
+	+media-breakpoint-down(xs)
+	h4
+		text-transform: uppercase
+		color: color-get($mau,footer-title)
+		position: relative
+		+fz(1rem)
+		margin-bottom: 1.5rem
+
+	.linkfooter
+		padding: 0 0 5rem
+		.item
+			background: color-get($mau, footer)
+			+pad(.5rem)
+			color: color-get($mau, trang)
+			text-decoration: none
+			figure
+				+mar(0)
+			figcaption
+				p
+					+mar(0)
+			&:hover, &:active, &:focus
+				color: color-get($mau, main)
+		.location
+			text-align: center
+			+media-breakpoint-up(md)
+				text-align: left
+			p 
+				+mar(0)
+				+fz(.9rem)
+				+fw(500)
+				line-height: 2rem
+		.socials
+			p
+				+fz(r(13px))
+				color: color-get($mau,trang)
+			.social-list
+				+media-breakpoint-down(sm)
+					+mar(2rem null null null)
+				.list-inline
+					+mar(0)
+					.list-inline-item
+						+fz(2rem)
+						+link(darken(color-get($mau,trang), 85%), color-get($mau,trang), color-get($mau,trang))
+						a
+							display: block
+							+pad(0 1.5rem)
+							+lh(2rem)
+							+bg(none)
+							+link(darken(color-get($mau,trang),0%), darken(color-get($mau,extra),0%))
+							text-align: center
+							i
+								+lh(2rem)
+						&:last-child
+							+mar(0)
+							a
+								padding-right: 0
+			.box-link
+				padding-top: 1rem
+				.link
+					color: color-get($mau, trang)
+					+pad(0 r(20px))
+					position: relative
+					&:last-child
+						padding-right: 0
+						&:after
+							display: none
+					&:after
+						+pos(abs, 0 0 null null)
+						// transform: translateX(-50%) translateY(-50%)
+						display: block
+						content: ""
+						background: color-get($mau, trang)
+						width: 1px
+						height: 100%
+			.copyright
+				background-color: none
+				p
+					+pad(1rem 0 0)
+					text-transform: uppercase
+					+fz(.85rem)
