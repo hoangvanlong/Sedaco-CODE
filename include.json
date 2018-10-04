@@ -2,6 +2,7 @@
     "SETUP": {
         "index": {
             "body": [
+                "header/h-1",
                 "carousel/c-3"
             ]
         }
