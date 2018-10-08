@@ -1,0 +1,61 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.home-box-4
+	+pad(2rem 1rem)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.title
+		text-align: center
+		.h2
+			+mar(0)
+			color: color-get($mau, title)
+			text-transform: uppercase
+			+fz(r(30px))
+	.project-hot
+		figure
+			margin-bottom: 2rem
+			position: relative
+			img
+				width: 100%
+			.item
+				display: block
+			figcaption
+				justify-content: center
+				align-items: center
+				text-align: center
+				+pos(abs, 50% null null 50%)
+				transform: translateX(-50%) translateY(-50%)
+				content: ""
+				display: flex
+				font-family: 'FontAwesome'
+				+fz(r(48px))
+				color: color-get($mau,trang)
+				width: 100%
+				height: 100%
+	.box-bottom
+		.item
+			text-decoration: none
+			display: flex
+			+mar(0 0 1rem 0)
+			height: r(98px)
+			i
+				width: r(90px)
+				display: flex
+				align-items: center
+				+fz(r(30px))
+				background: color-get($mau, facebook)
+				+pad(r(30px) r(41px))
+				color: color-get($mau, trang)
+			.box-content
+				+fz(r(13px))
+				+pad(r(10px) r(20px))
+				background: color-get($mau, xam-1)
+				display: grid
+				width: 100%
+				p
+					+mar(0)
+				time
+					align-self: flex-end

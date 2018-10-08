@@ -1,0 +1,57 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.contact-box-1
+	+pad(2rem 1rem)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.title
+		text-align: center
+		.h2
+			color: color-get($mau, title)
+			text-transform: uppercase
+			+fz(r(30px))
+			position: relative
+			&:after
+				+pos(abs, 110% null null 50%)
+				display: block
+				content: ""
+				width: r(80px)
+				height: 1px
+				background: color-get($mau, main)
+				transform: translateX(-50%) translateY(-50%)
+	.box-content
+		background: color-get($mau, contact)
+		+pad(r(34px) r(34px))
+		.h3 
+			text-transform: uppercase
+			+fz(r(30px))
+			+fw(500)
+			color: color-get($mau, title-contact)
+		.h4
+			+fz(r(15px))
+			+fw(bold)
+			color: color-get($mau, title-contact)
+		p
+			+fz(r(12px))
+	.form-wrap
+		input
+			background: color-get($mau, contact)
+			+bor-rad(r(3px))
+			height: r(46px)
+		textarea
+			background: color-get($mau, contact)
+			width: 100%
+		.form-bottom
+			.box-capcha
+				i
+					border: none
+					+fz(r(27px))
+			input
+				width: 100%
+			.btn-more
+				width: 100%
+				background: color-get($mau, main)
+				text-align: center

@@ -22,6 +22,15 @@ a
 	&:visited, &:active
 		color: color-get($mau,main)
 
+.btn-more
+	width: r(180px)
+	+pad(r(11px) 1.5rem)
+	text-align: left
+	color: color-get($mau, trang)
+	box-shadow: 0 0 0 1px color-get($mau, trang) inset
+	&:hover, &:focus, &:active
+		background: color-get($mau, trang)
+		color: color-get($mau, main)
 [ripple]
 	z-index: 1
 	position: relative

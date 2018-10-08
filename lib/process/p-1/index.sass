@@ -1,0 +1,42 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.process-box-1
+	+pad(2rem 1rem)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.title
+		text-align: center
+		.h2
+			color: color-get($mau, title)
+			text-transform: uppercase
+			+fz(r(30px))
+	.item
+		+mar(0 0 2rem)
+		display: flex
+		justify-content: center
+		text-decoration: none
+		color: color-get($mau, den)
+		figure
+			+mar(0)
+			img
+				width: 100%
+				height: auto
+			.box-content
+				max-height: r(132px)
+				background: color-get($mau, xam-1)
+				+pad(r(22px) r(17px))
+				.h3
+					+fz(r(15px))
+					+fw(400)
+					text-transform: uppercase
+					text-align: center
+				p
+					+fz(r(13px))
+		&:hover, &.active, &:focus
+			box-shadow: 0 0 15px 5px color-get($mau, xam-1)
+			figure
+				.box-content
+					background: color-get($mau, trang)

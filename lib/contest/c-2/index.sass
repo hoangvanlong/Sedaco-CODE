@@ -1,0 +1,34 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.contest-box-2
+	background: color-get($mau, xam-1)
+	+pad(2rem 1rem)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.title
+		text-align: center
+		margin-bottom: 1.5rem
+		+media-breakpoint-up(lg)
+			margin-bottom: 2rem
+		.h2
+			color: color-get($mau, title)
+			text-transform: uppercase
+			+fz(r(30px))
+	.h3
+	.h4
+		+fz(r(15px))
+		margin-bottom: 1rem
+		color: color-get($mau, contest)
+	.h5
+		+fz(r(15px))
+		+fw(500)
+	.box-content
+		+media-breakpoint-up(lg)
+			+pad(1rem 2rem)
+		ul
+			li
+				+fz(r(15px))
+				+fw(400)

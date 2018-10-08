@@ -4,7 +4,102 @@
             "body": [
                 "header/h-1",
                 "slider/s-1",
-                "carousel/c-3",
+                "home/b-1",
+                "home/b-2",
+                "home/b-3",
+                "home/b-4",
+                "home/b-5",
+                "footer/f-1"
+            ]
+        },
+        "intro": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "intro/i-1",
+                "footer/f-1"
+            ]
+        },
+        "process": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "process/p-1",
+                "footer/f-1"
+            ]
+        },
+        "process-detail-1": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "process-detail-1/p-1",
+                "footer/f-1"
+            ]
+        },
+        "process-detail-2": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "process-detail-2/p-1",
+                "footer/f-1"
+            ]
+        },
+        "contest": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "contest/c-1",
+                "contest/c-2",
+                "footer/f-1"
+            ]
+        },
+        "news": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "news/n-1",
+                "footer/f-1"
+            ]
+        },
+        "news-detail": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "news-detail/n-1",
+                "footer/f-1"
+            ]
+        },
+        "last-year": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "last-year/l-1",
+                "footer/f-1"
+            ]
+        },
+        "contact": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "contact/c-1",
+                "footer/f-1"
+            ]
+        },
+        "support": {
+            "body": [
+                "header/h-1",
+                "slider/s-1",
+                "breadcrumb/b-1",
+                "support/s-1",
                 "footer/f-1"
             ]
         }

@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+block variables
+	- var title = "last-year"
+	- var description = "Description for last-year page"
+	- var bodyclass = "last-year"
+	- var href = "/last-year.html"
+block header
+	include ../lib/header/h-1/index.pug
+block body
+	include ../lib/slider/s-1/index.pug
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/last-year/l-1/index.pug
+block footer
+	include ../lib/footer/f-1/index.pug

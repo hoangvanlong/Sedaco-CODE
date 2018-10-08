@@ -1,0 +1,76 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.process-detail-1
+	+pad(2rem 1rem)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.title
+		text-align: center
+		.h2
+			color: color-get($mau, title)
+			text-transform: uppercase
+			+fz(r(30px))
+	.item
+		+mar(0 0 2rem)
+		display: flex
+		justify-content: center
+		.btn-more
+			text-align: center
+			color: color-get($mau, title)
+			box-shadow: 0 0 0 1px color-get($mau, title) inset
+			+bor-rad(0)
+			width: 100%
+			+pad(1rem .25rem)
+			white-space: pre-wrap
+			&:hover, &:focus, &.active
+				background: color-get($mau, title)
+				color: color-get($mau, trang)
+		+media-breakpoint-up(md)
+			.btn-more
+				width: r(210px)
+		.btn-number
+			width: r(40px)
+			height: r(40px)
+			+mar(0 .5rem)
+			background: color-get($mau, xam-1)
+			&:hover, &:active, &:focus
+				outline: none
+	.images
+		.item
+			text-decoration: none
+			color: color-get($mau, den)
+			figure
+				+mar(0)
+				img
+					width: 100%
+					height: auto
+				.box-content
+					max-height: r(132px)
+					background: color-get($mau, xam-1)
+					+pad(r(22px) r(17px))
+					.h3
+						+fz(r(15px))
+						+fw(bold)
+					p
+						+fz(r(13px))
+			&:hover, &.active, &:focus
+				box-shadow: 0 0 15px 5px color-get($mau, xam-1)
+				figure
+					.box-content
+						background: color-get($mau, trang)
+		// 	+mar(0)
+		// 	text-decoration: none
+		// 	figure
+		// 		width: 100%
+		// 		height: r(283px)
+		// 		display: flex
+		// 		align-items: flex-end
+		// 		.box-content
+		// 			p
+		// 				+fz(r(15px))
+		// 				color: color-get($mau, trang)
+		// 				max-width: 100%
+		// 				white-space: pre-wrap

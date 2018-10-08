@@ -1,0 +1,48 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.home-box-2
+	+pad(2rem 1rem)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.title
+		text-align: center
+		.h2
+			color: color-get($mau, title)
+			text-transform: uppercase
+			+fz(r(30px))
+	.item
+		+mar(0 0 2rem)
+		display: flex
+		justify-content: center
+		.btn-more
+			text-align: center
+			color: color-get($mau, title)
+			box-shadow: 0 0 0 1px color-get($mau, title) inset
+			+bor-rad(0)
+			width: r(110px)
+			+pad(1rem .25rem)
+			white-space: pre-wrap
+			&:hover, &:focus, &.active
+				background: color-get($mau, title)
+				color: color-get($mau, trang)
+		+media-breakpoint-up(md)
+			.btn-more
+				width: r(210px)
+	.images
+		.item
+			+mar(0)
+			text-decoration: none
+			figure
+				width: 100%
+				height: r(283px)
+				display: flex
+				align-items: flex-end
+				.box-content
+					p
+						+fz(r(15px))
+						color: color-get($mau, trang)
+						max-width: 100%
+						white-space: pre-wrap

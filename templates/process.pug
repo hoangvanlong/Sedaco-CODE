@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+block variables
+	- var title = "process"
+	- var description = "Description for process page"
+	- var bodyclass = "process"
+	- var href = "/process.html"
+block header
+	include ../lib/header/h-1/index.pug
+block body
+	include ../lib/slider/s-1/index.pug
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/process/p-1/index.pug
+block footer
+	include ../lib/footer/f-1/index.pug

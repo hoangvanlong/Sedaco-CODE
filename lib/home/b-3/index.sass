@@ -1,0 +1,91 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.home-box-3
+	+pad(2rem 1rem)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.title
+		text-align: center
+		.h2
+			color: color-get($mau, title)
+			text-transform: uppercase
+			+fz(r(30px))
+	.item
+		justify-content: center
+		flex-direction: column
+		&:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5),&:last-child
+			height: 280px
+			+pad(1rem)
+			+media-breakpoint-up(lg)
+				+pad(2rem)
+				height: initial
+		&:nth-child(2)
+			background: color-get($mau, xam-1)
+			position: relative
+			+media-breakpoint-up(lg)
+				&:after
+					display: block
+					+pos(abs, 20% 100% null null)
+					content: ""
+					width: 0
+					height: 0
+					border-top: 20px solid transparent
+					border-bottom: 20px solid transparent
+					border-right: 20px solid color-get($mau, xam-1)
+					transform: translateY(-50%)
+		&:nth-child(3)
+			color: color-get($mau, trang)
+			background: color-get($mau, main)
+			.btn-more
+				color: color-get($mau, trang)
+				box-shadow: 0 0 0 1px color-get($mau, trang) inset
+				&:hover, &:active, &:focus
+					color: color-get($mau, main)
+					background: color-get($mau, trang)
+		&:nth-child(4)
+			+pad(1rem)
+			height: r(330px)
+			display: flex
+			justify-content: flex-end
+			+media-breakpoint-up(lg)
+				+pad(1rem 2rem)
+			p
+				+mar(0)
+				color: color-get($mau, trang)
+				width: 100%
+		&:nth-child(5)
+			background: color-get($mau, trang)
+			position: relative
+			+media-breakpoint-up(lg)
+				height: r(330px)
+				&:after
+					display: block
+					+pos(abs, 20% null null 100%)
+					content: ""
+					width: 0
+					height: 0
+					border-top: 20px solid transparent
+					border-bottom: 20px solid transparent
+					border-left: 20px solid color-get($mau, trang)
+					transform: translateY(-50%)
+					z-index: 10
+		&:nth-child(6)
+			+media-breakpoint-up(lg)
+				height: r(330px)
+		.h3
+			+fz(r(16px))
+			+fw(600)
+		.box-content
+			+fz(r(13px))
+			+fw(300)
+		.btn-more
+			color: color-get($mau, main)
+			box-shadow: 0 0 0 1px color-get($mau, main) inset
+			+fz(r(13px))
+			width: 140px
+			&:hover, &:active, &:focus
+				color: color-get($mau, trang)
+				background: color-get($mau, main)

@@ -1,0 +1,56 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.home-box-1
+	.nav
+		.item
+			+pad(1rem 0)
+			background: color-get($mau, extra)
+			margin-bottom: .25rem
+			display: flex
+			align-items: center
+			justify-content: center
+			figure
+				+mar(0)
+				text-align: center
+				.box-content
+					.h3
+						+fz(r(18px))
+						+pad(1rem .25rem 0)
+						text-transform: uppercase
+						+mar(0)
+						color: color-get($mau, trang)
+		+media-breakpoint-up(md)
+			.item
+				margin-bottom: 0
+	.box
+		color: color-get($mau, trang)
+		text-align: center
+		.item
+			display: flex
+			justify-content: center
+			align-items: center
+			+pad(4rem 1rem)
+			+media-breakpoint-up(lg)
+				+pad(4rem 0)
+			&:nth-child(2)
+				flex-direction: column
+				+pad(0 1rem 4rem)
+				+media-breakpoint-up(lg)
+					+pad(4rem 0)
+			.h2, .content, .intro
+				+mar(0 0 1.5rem)
+			.h2
+				color: color-get($mau, content)
+				text-transform: uppercase
+			.intro
+				figure
+					display: inline-block
+					.box-content
+						display: inline-block
+		+media-breakpoint-up(lg)
+			text-align: left
+			.item
+				align-items: flex-start
